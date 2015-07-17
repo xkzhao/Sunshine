@@ -81,7 +81,7 @@ public class ForecastFragment  extends Fragment
     }
 
     void onLocationChanged(){
-        //updateWeather();
+        updateWeather();
         getLoaderManager().restartLoader(FORECAST_LOADER, null, this);
     }
 
@@ -123,11 +123,11 @@ public class ForecastFragment  extends Fragment
 
     }
 
-    public void onStart(){
-        super.onStart();
-        updateWeather();
-
-    }
+//    public void onStart(){
+//        super.onStart();
+//        updateWeather();
+//
+//    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
